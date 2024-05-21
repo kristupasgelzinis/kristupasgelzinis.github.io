@@ -1,0 +1,48 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: blanchedalmond;
+  }
+
+  h1 {
+    color: SeaGreen;
+  }
+  
+  
+  p, 
+  label {
+    font-size: 18px;
+    color: white;
+  }
+
+  #dice {
+    background-color: brown;
+    padding: 2px;
+    color: white;
+  }
+
+  #btn {
+    color: white;
+    padding: 5px;
+    background-color: darkslateblue;
+    font-size: 18px;
+  }
+
+  #result {
+    font-size: 25px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+
+  #container {
+    width: 360px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: darkslateblue;
+    border-radius: 10px;
+  }
