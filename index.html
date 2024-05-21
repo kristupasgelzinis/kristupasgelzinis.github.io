@@ -1,9 +1,53 @@
+<!DOCTYPE html>
 <html>
-
+<head>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <title>A little DnD project</title>
+</head>
 <body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <div id="container">
+        <p>Here's a little tool to help you roll the dice</p>
+        <label for="dice">Choose a die:</label>
+
+        <select name="dice" id="dice">
+        <option value="20">d20</option>
+        <option value="12">d12</option>
+        <option value="8">d8</option>
+        <option value="6">d6</option>
+        <option value="4">d4</option>
+        </select>
+        <button type="button" class="btn" id="btn">Roll the Dice</button>
+        <p>Your roll: <span id="result"></span></p>
+    </div>
 </body>
+
+<script>
+    const btn = document.querySelector('#btn');
+        const sb = document.querySelector('#dice')
+        btn.onclick = (event) => {
+            event.preventDefault();
+
+            if (sb.selectedIndex === 0) {
+                var roll = Math.floor(Math.random() * ((20 - 1) + 1) + 1);
+                document.getElementById("result").innerHTML = roll;
+            };
+            if (sb.selectedIndex === 1) {
+                var roll = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                document.getElementById("result").innerHTML = roll;
+            };
+            if (sb.selectedIndex === 2) {
+                var roll = Math.floor(Math.random() * ((8 - 1) + 1) + 1);
+                document.getElementById("result").innerHTML = roll;
+            };
+            if (sb.selectedIndex === 3) {
+                var roll = Math.floor(Math.random() * ((6 - 1) + 1) + 1);
+                document.getElementById("result").innerHTML = roll;
+            };
+            if (sb.selectedIndex === 4) {
+                var roll = Math.floor(Math.random() * ((4 - 1) + 1) + 1);
+                document.getElementById("result").innerHTML = roll;
+            };
+        };
+</script>
 
 </html>
